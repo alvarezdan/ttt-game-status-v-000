@@ -9,5 +9,8 @@ WIN_COMBINATIONS = [
                   ]
 
 def won?(board)
-  
+  WIN_COMBINATIONS.detect do |wincomb|
+    board[wincomb[0]] == board[wincomb[1]] && board[wincomb[1]] == board[wincomb[2]] &&
+    position_taken?(board, combo[0])
+  end
 end
