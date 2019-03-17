@@ -19,3 +19,12 @@ end
 def full?(board)
   board.all?{|token| token == "X" || token == "O"}
 end
+
+def draw?
+end
+
+def over?
+end
+
+def winner
+end
